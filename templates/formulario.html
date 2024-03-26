@@ -1,0 +1,140 @@
+{% extends './index.html' %}
+
+{% block title %}{{ data.title }}{% endblock %}
+
+{%block formulario2%}
+<h1> Formulario </h1>
+<form action="/submit" method="post">
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre"><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+    <input type="submit" value="Enviar">
+</form>
+{%endblock%}
+{%block formulario%}
+<form action="/submit" method="post" class='width_form'>
+    <label for="gender">Género:</label><br>
+    <select id="gender" name="gender" class="form-select form-select-sm" aria-label="Small select example">
+        <option value="1">Masculino</option>
+        <option value="2">Femenino</option>
+    </select><br><br>
+<div class='fila'>
+    <div class='elemento1'>
+        <label for="age">Edad:</label><br>
+        <input type="number" id="age" name="age" min="0" step="1"><br><br>
+         </div>
+   
+
+         <div class='elemento2'> <label for="height">Altura:</label><br>
+    <input type="number" id="height" name="height" min="0" step="0.01"><br><br> </div>
+   
+</div>
+<div class='fila'>
+    <div class='elemento1'>
+    <label for="weight" class='elemento' >Peso:</label><br>
+    <input type="number" id="weight" name="weight" min="0" step="0.01" ><br><br>
+    </div>
+    <div class='elemento2'>
+        <label for="antecedentes">Antecedentes familares </label><br>
+        <select id="antecedentes" name="antecedentes" class="form-select form-select-sm" aria-label="Small select example">
+            <option value="1">Si</option>
+            <option value="0">No</option>
+        </select>
+    </div>
+
+
+</div>
+
+
+    <label for="gender">¿Consume frecuente  alimentos ricos en calorías? </label><br>
+    <select id="gender" name="FAVC" class="form-select form-select-sm" aria-label="Small select example">
+        <option value="1">Si</option>
+        <option value="0">No</option>
+    </select><br><br>
+
+    <label for="gender">¿Con que frecuencia  consumes  verduras? </label><br>
+    <select id="gender" name="FCVC" class="form-select form-select-sm" aria-label="Small select example">
+        <option value="1">Nunca</option>
+        <option value="2">Aveces</option>
+        <option value="3">Siempre</option>
+    </select><br><br>
+
+    <label for="gender">¿Cuantas comidas principales consumes al dia? </label><br>
+    <select id="gender" name="NCP" class="form-select form-select-sm" aria-label="Small select example">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select><br>
+    
+    <label for="gender">¿Consumo de alimentos entre comidas? </label><br>
+    <select id="gender" name="CAEC" class="form-select form-select-sm" aria-label="Small select example">
+        <option value="1">No</option>
+        <option value="2">Aveces</option>
+        <option value="3">Frecuentemente</option>
+        <option value="4">Siempre</option>
+    </select><br>
+
+    <label for="gender">¿Fumas? </label><br>
+    <select id="gender" name="SMOKE" class="form-select form-select-sm" aria-label="Small select example">
+        <option value="1">Si</option>
+        <option value="2">NO</option>
+       
+    </select><br>
+
+
+    <label for="gender">¿Cuanta agua consumes en el dia?</label><br>
+    <select id="gender" name="CH2O" class="form-select form-select-sm" aria-label="Small select example">
+        <option value="1">menos de un litro </option>
+        <option value="2">1–2 litros </option>
+        <option value="3"> más de 2 litros</option>
+       
+       
+    </select><br>
+
+
+    <label for="gender">¿Monitoreas tu consumo de calorías?</label><br>
+    <select id="gender" name="SCC" class="form-select form-select-sm" aria-label="Small select example">
+        <option value="1">Si</option>
+        <option value="2">No</option> 
+    </select><br>
+
+    <label for="gender">¿Que frecuencia de actividad física tienes a la semana?</label><br>
+    <select id="gender" name="FAF" class="form-select form-select-sm" aria-label="Small select example">
+        <option value="1">ninguno</option>
+        <option value="2">1 a 2 días</option>
+        <option value="3">2 a 4 días</option>
+        <option value="4"> 4 a 5 días</option> 
+    </select><br>
+
+    <label for="gender">¿Con que frecuencia usas los dispositivos tecnológicos?</label><br>
+    <select id="gender" name="TUE" class="form-select form-select-sm" aria-label="Small select example">
+        <option value="1"> 0–2 horas</option>
+        <option value="2"> 3–5 horas</option>
+        <option value="3">más de 5</option>
+       
+    </select><br>
+
+    <label for="gender">¿Consumes  alcohol?</label><br>
+    <select id="gender" name="CALC" class="form-select form-select-sm" aria-label="Small select example">
+        <option value="1">No</option>
+        <option value="2">Aveces</option>
+        <option value="3">Frecuentemente</option>
+        <option value="4">Siempre</option>
+       
+    </select><br>
+
+
+    <label for="gender">¿Que transporte utilizas?</label><br>
+    <select id="gender" name="MTRANS" class="form-select form-select-sm" aria-label="Small select example">
+        <option value="1">automóvil</option>
+        <option value="2"> moto</option>
+        <option value="3">bicicleta</option>
+        <option value="4">transporte público o caminas</option>
+       
+    </select><br>
+
+    <input type="submit" value="Enviar">
+</form>
+{%endblock%}

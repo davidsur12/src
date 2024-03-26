@@ -1,0 +1,59 @@
+alto_img {
+    width: 50%;
+    max-height : 30%;
+    background-color: blue;
+}
+.centrado {
+   background-color: chocolate;
+    margin: 20%;
+    padding: 10%;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+  
+}
+body{
+    background-color:aquamarine ;
+}
+
+.width_form{
+
+    width: 40%;
+    
+    justify-content: center; 
+  /* El div ocupará el 100% del ancho de su contenedor */
+    max-width: 600px; /* El div no se expandirá más allá de 600px */
+    min-width: 400px;
+    /*margin: 0 auto; */
+    border-radius: 10px; /* Valor de radio para redondear los bordes */
+    background-color: #8e1992; /* Color de fondo opcional */
+    padding: 20px; 
+    color: aliceblue;
+}
+.fila {
+    text-align: center; /* Alinea los elementos horizontalmente */
+    display: flex;
+    justify-content: center;
+}
+
+.elemento1{
+    /* Hace que los elementos se alineen horizontalmente */
+   
+   
+   color: #ffffff; /* Color de fondo de los elementos */
+ 
+  margin-right: 10px;
+  
+   
+ /* Espacio entre los elementos */
+}
+.elemento2{
+ /* Hace que los elementos se alineen horizontalmente */
+   
+  
+   color: #ffffff; /* Color de fondo de los elementos */
+  
+  
+   
+ /* Espacio entre los elementos */
+}
