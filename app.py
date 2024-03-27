@@ -37,16 +37,29 @@ def submit():
         print('antecedentes ', str(antecedentes))
         print('FAVC', str(FAVC))
         print('FCVC', str(FCVC))
-        datos = [gender, age, height, weight, antecedentes, FAVC, FCVC, NCP, CAEC, SMOKE, CH2O, SCC, FAF, TUE ,CALC ,MTRANS]
+        
+        datos = [float(gender), normalizarVariable(age, 0 , 100),  normalizarVariable(height, 0 , 100), normalizarVariable(weight, 0 , 100),
+                 float(antecedentes), float(FAVC),  normalizarVariable(FCVC, 1 , 3),  normalizarVariable(NCP, 1 , 4),
+                 normalizarVariable(CAEC, 1 , 4), float(SMOKE), normalizarVariable(CH2O, 1 , 3) ,
+                 float(SCC), normalizarVariable(FAF, 1 , 4), normalizarVariable(TUE, 1 , 3),
+                 normalizarVariable(CALC , 1 , 4) ,normalizarVariable(MTRANS , 1 , 4)]
+        
+        
        
         
         for n in datos:
-            print(str(n))
+            print( n)
+            #print(n)
         print('date  recibido')
+         
         
         return 'Formulario enviado exitosamente'   
     
- 
+def normalizarVariable(variable, num_min, num_max):
+    return float((int(variable) - num_min)/(num_max-num_min))
+    
+
+        
 if __name__ == '__main__':
     app.config.from_object(config['developmet'])
     app.run()
