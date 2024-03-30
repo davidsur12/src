@@ -13,7 +13,7 @@
 </form>
 {%endblock%}
 {%block formulario%}
-<form action="/submit" method="post" class='width_form'>
+<form id='formulario' action='/procesar' method="post" class='width_form'>
     <label for="gender">Género:</label><br>
     <select id="gender" name="gender" class="form-select form-select-sm" aria-label="Small select example">
         <option value="1">Masculino</option>
@@ -135,6 +135,13 @@
        
     </select><br>
 
-    <input type="submit" value="Enviar">
+    
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <input type="submit" value="Calcular"  id="enviar" class="btn btn-primary">
+        
+      </div>
 </form>
+
+
+
 {%endblock%}

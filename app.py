@@ -1,5 +1,6 @@
 from flask import Flask, render_template,  request
 from config import config
+from modelo import ModeloOrange
 
 app = Flask(__name__)
 
@@ -7,10 +8,12 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     data ={'title': 'Formulario'}
+    #m=ModeloOrange()
+    #m.informe()
     return render_template('formulario.html', data=data)
     #return 'hi' 
     
-@app.route('/submit', methods=['POST'])
+@app.route('/procesar', methods=['POST'])
 def submit():
     if request.method == 'POST':
         gender = request.form['gender']
@@ -51,15 +54,21 @@ def submit():
             print( n)
             #print(n)
         print('date  recibido')
-         
+        m=ModeloOrange()
+        r=m.informe(datos) 
         
-        return 'Formulario enviado exitosamente'   
+        return ('el rsultado fue'  + str(r) )  
+ 
+   
     
 def normalizarVariable(variable, num_min, num_max):
     return float((int(variable) - num_min)/(num_max-num_min))
     
 
-        
+
+ 
+
+       
 if __name__ == '__main__':
     app.config.from_object(config['developmet'])
     app.run()

@@ -28,7 +28,8 @@ body{
     border-radius: 10px; /* Valor de radio para redondear los bordes */
     background-color: #8e1992; /* Color de fondo opcional */
     padding: 20px; 
-    color: aliceblue;
+    color: rgb(255, 255, 255);
+    margin: 0 auto;
 }
 .fila {
     text-align: center; /* Alinea los elementos horizontalmente */
