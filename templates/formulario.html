@@ -12,6 +12,91 @@
     <input type="submit" value="Enviar">
 </form>
 {%endblock%}
+{%block slider%}
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{ url_for('static', filename='img/ima1.png') }}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="{{ url_for('static', filename='img/ima2.jpg') }}"class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="..." class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+{%endblock%}
+
+{%block titulo%}
+<h2 class="display-2 , centrado2 ">Reconocimiento de patrones para la predicción de niveles de obesidad mediante técnicas de minería de datos</h2>
+
+{%endblock%}
+
+{%block intro%}
+<p class="text-lowercase , centrado2 ">El presente trabajo se centra en la estimación de niveles de obesidad en individuos de Colombia, Perú y México mediante el análisis de un conjunto de datos exhaustivo que abarca hábitos alimentarios y condición física. El conjunto de datos recopila información demográfica, patrones alimentarios, actividad física y mediciones antropométricas de una muestra representativa de la población en estos tres países.
+
+    La metodología incluye técnicas de tratamiento de datos y aprendizaje automático para identificar patrones y relaciones significativas entre variables. Se utilizan algoritmos de clasificación para desarrollar modelos predictivos capaces de estimar los niveles de obesidad de un individuo en función de sus hábitos alimentarios y condición física. Además, se exploran diferencias regionales y se proponen recomendaciones personalizadas para la prevención y manejo de la obesidad en cada país.
+    </p>
+{%endblock%}
+
+{%block dm1%}
+<h2 class="display-2 , centrado2 ">Por que es peligrosa</h2>
+
+<p class="text-lowercase , centrado2 ">
+    La obesidad se considera peligrosa por una variedad de razones, ya que puede tener efectos significativos y negativos en la salud física y mental de una persona. Algunas de las razones por las que la obesidad se considera peligrosa incluyen:
+    </p>
+
+    <ul class="list-group , centrado2">
+        <li class="list-group-item">Mayor riesgo de enfermedades crónicas</li>
+        <li class="list-group-item">Impacto en la calidad de vida</li>
+        <li class="list-group-item">Mayor riesgo de mortalidad</li>
+        <li class="list-group-item">Impacto en la salud mental</li>
+        <li class="list-group-item">Costos económicos y sociales</li>
+      </ul>
+{%endblock%}
+
+{%block dm2%}
+<h2 class="display-2 , centrado2 ">Principales causas de la obesidad</h2>
+
+<p class="text-lowercase , centrado2 ">
+    La obesidad es una condición multifactorial que puede ser causada por una combinación de factores genéticos, ambientales, sociales y conductuales. Algunas de las causas más comunes de la obesidad incluyen: </p>
+
+    <ul class="list-group , centrado2">
+        <li class="list-group-item">Factores genéticos</li>
+        <li class="list-group-item">Hábitos alimenticios poco saludables</li>
+        <li class="list-group-item">Inactividad física</li>
+        <li class="list-group-item">Factores socioeconómicosl</li>
+        <li class="list-group-item">Factores psicológicos y emocionales</li>
+        <li class="list-group-item">Factores ambientales</li>
+        <li class="list-group-item">Factores hormonales</li>
+      </ul>
+{%endblock%}
+
+{%block dm3%}
+<h2 class="display-2 , centrado2 ">Impacto de la obesidad en la educacion</h2>
+
+<p class="text-lowercase , centrado2 ">
+  
+La obesidad puede tener varios impactos en la educación, tanto en el ámbito académico como en el socioemocional. Aquí hay algunos aspectos en los que la obesidad puede afectar la educación:
+    <ul class="list-group , centrado2">
+        <li class="list-group-item">Rendimiento académico</li>
+        <li class="list-group-item">Ausentismo escolar</li>
+        <li class="list-group-item">Bullying y estigma</li>
+        <li class="list-group-item">Problemas de autoestima y autoimagen</li>
+        <li class="list-group-item">Riesgos de salud a largo plazo</li>
+        <li class="list-group-item">Calidad de vida</li>
+      </ul>
+{%endblock%}
 {%block formulario%}
 <form id='formulario' action='/procesar' method="post" class='width_form'>
     <label for="gender">Género:</label><br>

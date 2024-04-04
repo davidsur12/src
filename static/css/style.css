@@ -12,6 +12,13 @@ alto_img {
     border-radius: 10px;
   
 }
+.centrado2 {
+     margin: 5%;
+     width: auto;
+     height: auto;
+     border-radius: 10px;
+     text-align: center;
+ }
 body{
     background-color:aquamarine ;
 }
