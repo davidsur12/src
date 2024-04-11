@@ -14,14 +14,66 @@ alto_img {
 }
 .centrado2 {
      margin: 5%;
+     margin-bottom: 2%;
      width: auto;
      height: auto;
      border-radius: 10px;
      text-align: center;
  }
+ footer {
+    margin: 5%;
+    margin-bottom: 2%;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #3498DB;
+    width: auto;
+     height: auto;
+     border-radius: 10px;
+     text-align: center;
+     height: 200px;
+     color: #ffffff;
+     font-size: 40px;
+     text-align: center;
+
+}
+
+
+ .itemList{
+background-color: #3498DB ;
+margin-bottom: 1%;
+padding: 2%;
+border-radius: 10px;
+ }
+ .itemListTitle{
+    background-color: #eba91a ;
+    margin-bottom: 1%;
+    padding: 2%;
+    border-radius: 10px;
+
+ }
+ .centerimg{
+    margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+ }
+ 
+ .result1{
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #eba91a; 
+ }
+
 body{
     background-color:aquamarine ;
 }
+
+
 
 .width_form{
 

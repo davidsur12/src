@@ -19,10 +19,37 @@
        
     </head>
     <body>
-      <h2 class='centrado2'>
-        {%block result%}
-        {{data.result}}
-        {%endblock%}
+        <div class='result1'> 
+
+            <h2 class='centrado2'>
+                Tu IMC es de :   {{data.imcpeso}} 
+                <br>
+                 categoría :  {{data.imc}}
+                
+             </h2>
+
+
+        </div>
+        
+<h2 class='centrado2'>
+   la categoria segun tus hábitos alimentarios y condición física es de una persona con :  {{data.result}}
+</h2>
+<img src="{{ url_for('static', filename='img/estilovd.png') }}"  class="centerimg" ></img>
+    <br>
+    <h2 class='centrado2 itemListTitle'>
+        {{data.result2[0]}}
     </h2>
+        <br>
+<h2 class='centrado2'>
+    {%for elemento in data.result2[1:]%}
+     <li class='itemList'>{{ elemento }}</li>
+    {% endfor %}
+
+
+</h2>
+<footer >
+    <!-- Contenido del pie de página -->
+    <p>Trabajo realizado por:  Jaime Alexander Chilama Cuasanchir, Johnnathan David Dueñas Rosero</p>
+</footer>
     </body>
 </html>

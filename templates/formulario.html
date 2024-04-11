@@ -97,8 +97,10 @@ La obesidad puede tener varios impactos en la educación, tanto en el ámbito ac
         <li class="list-group-item">Calidad de vida</li>
       </ul>
 {%endblock%}
+
 {%block formulario%}
-<form id='formulario' action='/procesar' method="post" class='width_form'>
+<h2 class="display-2 , centrado2 ">Porfavor completa el siguiente formulario para conocer tu nivele de obesidad</h2>
+<form id='formulario' action='/procesar' method="post" class='width_form' onsubmit="return validarFormulario()">
     <label for="gender">Género:</label><br>
     <select id="gender" name="gender" class="form-select form-select-sm" aria-label="Small select example">
         <option value="1">Masculino</option>
